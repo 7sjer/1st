@@ -1,0 +1,23 @@
+#n1 = int(input("enter the first number or write /'exit/' :  "))
+#n2 = int(input("enter the second number : "))
+
+
+
+
+
+current_sum = 0
+def sum() :
+    print("welcome to hasan first caculator ")
+    global current_sum
+    while True :
+        print(f"your current sum is {current_sum} ")
+        add = input("write the number u want to add more or exit  :  ")
+        if add == "exit":
+             return print(f" u finished with sum of {current_sum } ")
+             break
+        else :
+            summ = int(add)
+            current_sum += summ
+            print(f"the result is {current_sum}")
+    
+print(sum())
